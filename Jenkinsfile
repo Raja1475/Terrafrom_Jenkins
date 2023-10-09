@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('init') {
             steps {
+
                 sh '''
                 cd /g/AWS - Devops/Jenkins/Terraform-Jenkins/Practice
                 terraform init
@@ -14,9 +15,11 @@ pipeline {
         }
 
         stage('plan') {
+            steps {
             sh '''
             terraform plan
             '''
+            }
         }
 
     }
