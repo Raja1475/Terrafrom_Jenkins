@@ -6,6 +6,7 @@ pipeline {
             steps {
 
                 sh '''
+                    pwd
                     terraform init
                 '''
 
