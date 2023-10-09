@@ -13,7 +13,7 @@ pipeline {
             }
         }
 
-        stage('plan') {
+        stage('plan terraform') {
             sh '''
             terraform plan
             '''
