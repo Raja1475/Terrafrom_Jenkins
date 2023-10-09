@@ -6,9 +6,7 @@ pipeline {
             steps {
 
                 sh '''
-                cd /g/AWS - Devops/Jenkins/Terraform-Jenkins/Practice
-                terraform init
-
+                    terraform init
                 '''
 
             }
