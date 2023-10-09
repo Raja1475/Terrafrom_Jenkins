@@ -2,7 +2,7 @@ pipeline {
     agent { node { label 'Agent1'} }
 
     stages {
-        stage('init') {
+        stage('init terraform') {
             steps {
 
                 sh '''
@@ -12,7 +12,7 @@ pipeline {
             }
         }
 
-        stage('plan') {
+        stage('plan terraform') {
             steps {
             sh '''
             terraform plan
