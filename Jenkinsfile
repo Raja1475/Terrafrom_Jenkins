@@ -7,6 +7,7 @@ pipeline {
 
                 sh '''
                     pwd
+                    ls -lrt
                     terraform init
                 '''
 
