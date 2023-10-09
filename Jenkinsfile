@@ -1,6 +1,10 @@
 pipeline {
     agent { node { label 'Agent1'} }
 
+    options {
+        ansiColour('xterm')
+    }
+
     stages {
         stage('init terraform') {
             steps {
