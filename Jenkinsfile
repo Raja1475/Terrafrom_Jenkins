@@ -1,6 +1,5 @@
 pipeline {
     agent { node { label 'Agent1'} }
-
     options {
         ansiColor('xterm')
     }
