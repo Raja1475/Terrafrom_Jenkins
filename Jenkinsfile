@@ -2,7 +2,7 @@ pipeline {
     agent { node { label 'Agent1'} }
 
     options {
-        ansiColour('xterm')
+        ansiColor('xterm')
     }
 
     stages {
@@ -18,7 +18,7 @@ pipeline {
             }
         }
 
-        stage('plan terraform1') {
+        stage('plan terraform') {
             steps {
             sh '''
             terraform plan
