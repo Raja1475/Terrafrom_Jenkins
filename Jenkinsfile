@@ -5,7 +5,7 @@ pipeline {
     }
 
     stages {
-        stage('init terraform') {
+        stage('init') {
             steps {
 
                 sh '''
@@ -17,7 +17,7 @@ pipeline {
             }
         }
 
-        stage('plan terraform') {
+        stage('plan') {
             steps {
             sh '''
             terraform plan
