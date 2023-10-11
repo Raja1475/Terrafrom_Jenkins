@@ -20,6 +20,7 @@ pipeline {
         stage('plan') {
             steps {
             sh '''
+            pwd
             terraform plan
             '''
             }
