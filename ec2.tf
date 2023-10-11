@@ -3,8 +3,8 @@ resource "aws_instance" "Node2" {
     instance_type = var.instance_type
 
     tags = {
-    Name        = "Node2"
-    Terraform   = "yes"
+        Name        = "Node2"
+        Terraform   = "yes"
     }
 }
 
