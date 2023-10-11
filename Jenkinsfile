@@ -25,5 +25,19 @@ pipeline {
             }
         }
 
+        stage('Approve') {
+            steps {
+                input "shall I Apply?"
+            }
+        }
+
+        stage(apply) {
+            steps {
+                sh '''
+                terraform apply --autoapprove
+                '''
+            }
+        }
+
     }
 }
